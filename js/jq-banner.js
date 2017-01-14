@@ -56,6 +56,25 @@ $(function () {
         })
     }();
 
+
+    //移动端
+    if (navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)) {
+        Mobile();
+    }
+
+    function Mobile(){
+        $("#a1").bind("click", function () {
+            $("#navConUl").toggle();
+        });
+        $("#last1>div").bind("click", function () {
+            var $this=$(this);
+            if (this.offsetHeight > 200) {
+                $this.animate({height:"50px"},800);
+            } else {
+                $this.animate({height:"200px"},800);
+            }
+        })
+    }
 });
 
 

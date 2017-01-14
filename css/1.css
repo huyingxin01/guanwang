@@ -206,7 +206,6 @@
 }
 
 .icon a:hover {
-    background: #00cc99;
     box-shadow: 0 0 0 30px transparent;
     -webkit-transition: box-shadow 1s;
     -moz-transition: box-shadow 1s;
@@ -665,6 +664,11 @@
         border-bottom: 1px solid #f5ddf4;
     }
 
+}
+@media all and (max-width: 364px){
+    .home a {
+        margin: 0 10px;
+    }
 }
 
 .navCon h1 a.c1 {
