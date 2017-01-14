@@ -66,12 +66,12 @@ $(function () {
         $("#a1").bind("click", function () {
             $("#navConUl").toggle();
         });
-        $("#last1>div").bind("click", function () {
+        $("#last1>div>h3").bind("click", function () {
             var $this=$(this);
-            if (this.offsetHeight > 200) {
-                $this.animate({height:"50px"},800);
+            if (parseInt($this.parent().css("height")) >= 200) {
+                $this.parent().animate({height:"50px"},800);
             } else {
-                $this.animate({height:"200px"},800);
+                $this.parent().animate({height:"200px"},800);
             }
         })
     }
